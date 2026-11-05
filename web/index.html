@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <!-- Filled in by the API with the path the app is mounted under behind the proxy ("/fin"). -->
+    <meta name="fin-prefix" content="">
+    <script>
+      // "/fin" without a trailing slash would resolve ./assets against "/": go to "/fin/".
+      (function () {
+        var p = document.querySelector('meta[name="fin-prefix"]').content;
+        if (p && location.pathname === p) location.replace(p + "/" + location.search + location.hash);
+      })();
+    </script>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>fin</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

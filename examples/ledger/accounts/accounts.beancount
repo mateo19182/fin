@@ -1,0 +1,14 @@
+2024-01-01 open Assets:Bank:Revolut:Checking EUR
+2024-01-01 open Assets:Bank:CaixaRural:Checking EUR
+2024-01-01 open Assets:Investment:Revolut:Cash USD,EUR
+2024-01-01 open Assets:Investment:Revolut:Stocks
+2024-01-01 open Income:Investment:Dividends USD,EUR
+2024-01-01 open Income:CapitalGains:Stocks USD,EUR
+2024-01-01 open Income:Salary:Example EUR
+2024-01-01 open Income:Uncategorized EUR
+2024-01-01 open Expenses:Uncategorized EUR
+2024-01-01 open Expenses:Food:Groceries EUR
+2024-01-01 open Expenses:Food:Restaurant EUR
+2024-01-01 open Expenses:Entertainment EUR
+2024-01-01 open Expenses:Software EUR
+2024-01-01 open Equity:Opening-Balances EUR,USD

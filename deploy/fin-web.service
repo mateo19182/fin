@@ -1,0 +1,15 @@
+[Unit]
+Description=fin web (review UI + API) on http://127.0.0.1:8742
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/projects/personal/fin
+ExecStart=%h/projects/personal/fin/.venv/bin/fin serve
+Restart=on-failure
+RestartSec=10
+UMask=0077
+
+[Install]
+WantedBy=default.target

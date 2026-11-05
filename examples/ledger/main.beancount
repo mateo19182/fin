@@ -1,0 +1,9 @@
+option "title" "Personal finance"
+option "operating_currency" "EUR"
+option "operating_currency" "USD"
+option "inferred_tolerance_default" "*:0.01"
+
+include "accounts/accounts.beancount"
+include "transactions/banks/*.beancount"
+include "transactions/investments.beancount"
+include "prices/prices.beancount"

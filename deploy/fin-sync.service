@@ -1,0 +1,12 @@
+[Unit]
+Description=fin daily sync (banks, prices, indexa, wallets) and Telegram review list
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/projects/personal/fin
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=%h/projects/personal/fin/.venv/bin/fin sync
+TimeoutStartSec=15min
+UMask=0077

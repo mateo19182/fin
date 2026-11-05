@@ -1,0 +1,54 @@
+# Copy to config.toml (gitignored). Relative paths are from the repo root.
+ledger = "ledger/main.beancount"
+data_dir = "data"
+docs_dir = "docs"  # private documents; inbox/ inside
+host = "127.0.0.1"  # localhost; use your Tailscale IP for private remote access
+port = 8742
+
+[web]
+# Public URL of the web app, used in Telegram messages. The app also works at the bare
+# host:port; a path here ("/fin") is the mount point of `tailscale serve --set-path /fin`.
+base_url = "http://127.0.0.1:8742"
+
+[notify]
+target = "telegram"  # hermes send --to <target>
+
+# Optional: Claude Haiku categorises what rules and history cannot, and reads receipts
+# (PDFs and photos). Off without a key.
+# [anthropic]
+# api_key = ""  # or env ANTHROPIC_API_KEY
+
+[enable_banking]
+app_id = ""
+key_path = "data/secrets/enable-banking.pem"
+sessions = "data/secrets/eb-sessions.json"
+
+[enable_banking.banks.revolut]
+name = "Revolut"
+country = "ES"
+account = "Assets:Bank:Revolut:Checking"
+
+[enable_banking.banks.caixa_rural]
+name = "Caixa Rural Galega"
+country = "ES"
+account = "Assets:Bank:CaixaRural:Checking"
+
+[indexa]
+token = ""  # Área privada > Configuración de usuario > Aplicaciones (or env INDEXA_TOKEN)
+account = "Assets:Investment:Indexa"
+
+# [[wallets]]
+# account = "Assets:Crypto:Wallet:BTC"
+# chain = "btc"  # btc | ltc | eth | base
+# address = "bc1..."  # or, for btc/ltc HD accounts: xpub = "zpub..." (Trezor Suite → account → Details)
+
+# [[wallets]]
+# account = "Assets:Crypto:Wallet:BASE"
+# chain = "base"
+# address = "0x..."
+# tokens = [{ symbol = "USDC", contract = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913", account = "Assets:Crypto:Wallet:BASE:USDC" }]
+
+[renta]
+# First day as an employee per employer (payslips). Earlier deposits from the same company are
+# autónomo invoice receipts. Clients/employers are matched by the Income:Salary:<Name> account.
+employment = {}

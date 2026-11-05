@@ -1,0 +1,41 @@
+2026-09-01 * "Example" "Salary"
+  transaction_id: "t-salary-1"
+  source: "revolut"
+  Income:Salary:Example                            -2000.00 EUR
+  Assets:Bank:Revolut:Checking                   2000.00 EUR
+
+2026-09-03 * "Mercadona" "Mercadona"
+  transaction_id: "t-merc-1"
+  source: "revolut"
+  Expenses:Food:Groceries                          23.40 EUR
+  Assets:Bank:Revolut:Checking                    -23.40 EUR
+
+2026-09-10 * "Mercadona" "Mercadona"
+  transaction_id: "t-merc-2"
+  source: "revolut"
+  Expenses:Food:Groceries                          41.10 EUR
+  Assets:Bank:Revolut:Checking                    -41.10 EUR
+
+2026-09-17 * "Mercadona" "Mercadona"
+  transaction_id: "t-merc-3"
+  source: "revolut"
+  Expenses:Food:Groceries                          18.75 EUR
+  Assets:Bank:Revolut:Checking                    -18.75 EUR
+
+2026-09-05 * "Netflix" "Netflix"
+  transaction_id: "t-netflix-1"
+  source: "revolut"
+  Expenses:Software                                12.99 EUR
+  Assets:Bank:Revolut:Checking                    -12.99 EUR
+
+2026-09-06 * "Bar Pepe" "Bar Pepe"
+  transaction_id: "t-pepe-1"
+  source: "revolut"
+  Expenses:Food:Restaurant                         14.00 EUR
+  Assets:Bank:Revolut:Checking                    -14.00 EUR
+
+2026-09-20 * "Bar Pepe" "Bar Pepe"
+  transaction_id: "t-pepe-2"
+  source: "revolut"
+  Expenses:Entertainment                            6.00 EUR
+  Assets:Bank:Revolut:Checking                     -6.00 EUR

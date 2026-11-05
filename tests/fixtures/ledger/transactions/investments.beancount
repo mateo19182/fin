@@ -1,0 +1,7 @@
+2026-01-03 * "Opening Balance" "NVDA"
+  Equity:Opening-Balances               -300.00 USD
+  Assets:Investment:Revolut:Stocks        2 NVDA {150.00 USD}
+
+2026-01-03 * "Opening Balance" "USD Cash"
+  Equity:Opening-Balances              -100.00 USD
+  Assets:Investment:Revolut:Cash        100.00 USD

@@ -1,0 +1,10 @@
+[Unit]
+Description=Run fin report on the 1st of each month at 09:00 Europe/Madrid
+
+[Timer]
+OnCalendar=*-*-01 09:00:00 Europe/Madrid
+Persistent=true
+Unit=fin-report.service
+
+[Install]
+WantedBy=timers.target

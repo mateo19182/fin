@@ -1,0 +1,10 @@
+[Unit]
+Description=Run fin sync daily at 08:30 Europe/Madrid
+
+[Timer]
+OnCalendar=*-*-* 08:30:00 Europe/Madrid
+Persistent=true
+Unit=fin-sync.service
+
+[Install]
+WantedBy=timers.target
